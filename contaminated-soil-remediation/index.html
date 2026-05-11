@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
 .cat-arrow{display:inline-block;transition:transform .2s ease;font-size:.85rem}
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -57,10 +62,10 @@ body { font-family: var(--font-b); color: var(--text); background: var(--bg); li
 .cat-row:hover{background:rgba(255,255,255,.05)}
 .cta .contacto-line a { color: white; text-decoration: underline; }
 .sidebar .cat.open + .sub { display: flex; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
-    .container { padding: 1rem; }
+    
 .sidebar .sub { display: none; background: rgba(0,0,0,0.15); flex-direction: column; }
 .sidebar {
     width: 240px; background: var(--dark); color: white; flex-shrink: 0;
@@ -76,7 +81,7 @@ main p { margin-bottom: 1rem; color: #334155; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .cat-toggle:hover{background:rgba(255,255,255,.1)}
-    .header-top { flex-direction: column; text-align: center; }
+    
 tr:nth-child(even) { background: #f8fafc; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -123,7 +128,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
     text-decoration: none;
 }
 .cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
-    main { padding: 1.5rem; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -136,7 +141,9 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
-th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }</style>
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
 img{max-width:100%!important;height:auto!important}
   body{background:#FAFAFA!important;color:#18181B!important}
-  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}</style></head>
+  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -210,6 +219,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Our services</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Our team offers two core contaminated soil remediation services tailored to Henderson's conditions:</p>
                 <style>.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid a.servicio-link:hover{border-color:#8B5CF6;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#8B5CF6}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#8B5CF6;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}</style><div class="servicios-grid"><div class="servicio"><h3>In-Situ Remediation Design</h3><p>We design and oversee in-situ treatments such as soil vapor extraction, chemical oxidation, and bioremediation. These methods minimize excavation and disposal costs while treating contaminants directly in the ground. Our approach includes pilot testing, performance monitoring, and confirmation sampling to verify cleanup goals are met.</p></div><div class="servicio"><h3>Excavation & Off-Site Disposal Management</h3><p>For sites where removal is the most effective path, we manage the entire process: delineation of contaminated zones, safe excavation, transportation to permitted facilities, and backfill with clean material. We coordinate with NDEP for closure documentation and provide a complete record of disposal manifests and analytical results.</p></div></div>
             </section>
@@ -221,6 +232,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Coverage in Henderson Nevada</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <link rel="stylesheet" href="/css/leaflet-4561.css"/>
                 <div id="mapa-ciudad"></div>
                 <script src="/js/leaflet-4561.js"></script>

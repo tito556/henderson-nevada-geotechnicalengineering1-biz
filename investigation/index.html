@@ -23,6 +23,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
 .cat-arrow{display:inline-block;transition:transform .2s ease;font-size:.85rem}
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -54,10 +59,10 @@ body { font-family: var(--font-b); color: var(--text); background: var(--bg); li
 .cat-row:hover{background:rgba(255,255,255,.05)}
 .cta .contacto-line a { color: white; text-decoration: underline; }
 .sidebar .cat.open + .sub { display: flex; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
-    .container { padding: 1rem; }
+    
 .sidebar .sub { display: none; background: rgba(0,0,0,0.15); flex-direction: column; }
 .sidebar {
     width: 240px; background: var(--dark); color: white; flex-shrink: 0;
@@ -73,7 +78,7 @@ main p { margin-bottom: 1rem; color: #334155; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .cat-toggle:hover{background:rgba(255,255,255,.1)}
-    .header-top { flex-direction: column; text-align: center; }
+    
 tr:nth-child(even) { background: #f8fafc; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -120,7 +125,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
     text-decoration: none;
 }
 .cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
-    main { padding: 1.5rem; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -133,7 +138,9 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
-th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }</style>
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -145,7 +152,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
 img{max-width:100%!important;height:auto!important}
   body{background:#FAFAFA!important;color:#18181B!important}
-  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@id":"https://henderson-nevada.geotechnicalengineering1.biz/#website-4561","@type":"WebSite","url":"https://henderson-nevada.geotechnicalengineering1.biz"},"description":"In Henderson, subsurface investigation is the critical first step for any construction project, shaped by the valley’s alluvial fans, caliche layers, and p","url":"https://henderson-nevada.geotechnicalengineering1.biz/investigation/","@type":"WebPage","inLanguage":"en","name":"Investigation in Henderson Nevada – USA","@id":"https://henderson-nevada.geotechnicalengineering1.biz/investigation/"},{"itemListElement":[{"name":"Home","position":1,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/"},{"name":"Investigation","position":2,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/investigation/"}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"SPT (Standard Penetration Test)","position":1,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/standard-penetration/"}],"@type":"ItemList","name":"Investigation"}]}</script></head>
+  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
+}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@id":"https://henderson-nevada.geotechnicalengineering1.biz/#website-4561","@type":"WebSite","url":"https://henderson-nevada.geotechnicalengineering1.biz"},"description":"In Henderson, subsurface investigation is the critical first step for any construction project, shaped by the valley’s alluvial fans, caliche layers, and p","url":"https://henderson-nevada.geotechnicalengineering1.biz/investigation/","@type":"WebPage","inLanguage":"en","name":"Investigation in Henderson Nevada – USA","@id":"https://henderson-nevada.geotechnicalengineering1.biz/investigation/"},{"itemListElement":[{"name":"Home","position":1,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/"},{"name":"Investigation","position":2,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/investigation/"}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"SPT (Standard Penetration Test)","position":1,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/standard-penetration/"}],"@type":"ItemList","name":"Investigation"}]}</script></head>
 <body>
 
 <header>
@@ -213,7 +222,14 @@ img{max-width:100%!important;height:auto!important}
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../standard-penetration/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">SPT (Standard Penetration Test)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/ensayo-spt-2.webp" alt="Investigation in Henderson Nevada" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Geotechnical investigation in Henderson, Nevada, is the critical first phase of any construction project, designed to characterize subsurface conditions in this unique desert basin environment. Our work addresses the complex geology shaped by the Las Vegas Wash, alluvial fans emanating from the McCullough Range, and deep deposits of interbedded sands, gravels, and expansive clays. A rigorous <a href="/investigation/">geotechnical investigation</a> is essential to navigate local hazards, including collapsible soils, variable caliche layers, and a shallow groundwater table influenced by nearby Lake Mead. These investigations are conducted in strict accordance with the City of Henderson Building Department requirements, which mandate compliance with the International Building Code (IBC) and the Southern Nevada amendments, ensuring a foundation design that mitigates risk from both static and seismic loading.</p>
+<p>Our investigative methodology integrates proven field exploration with advanced testing protocols defined by ASTM International and AASHTO standards. We deploy truck and track-mounted drilling rigs to log stratigraphy and obtain representative samples, executing the <a href="/standard-penetration/">Standard Penetration Test (SPT)</a> per ASTM D1586 to measure soil density and consistency at regular intervals. For fine-grained soils where stiffness and stress history are paramount, we utilize <a href="/in-situ-testing/">in-situ testing</a> methods, notably the <a href="/flat-dilatometer/">Flat Dilatometer Test (DMT)</a> following ASTM D6635, which provides a high-resolution profile of lateral stresses and stratigraphic anomalies. Where shallow foundation performance is critical, <a href="/plate-load/">plate load tests (PLT)</a> per ASTM D1194 offer direct measurement of soil bearing capacity and deformation modulus, providing definitive data for structural engineers.</p>
+<p>A typical geotechnical investigation in Henderson is tailored to the specific demands of the project, from residential subdivisions in Inspirada to large-scale commercial developments near the M Resort or public infrastructure along the I-215 corridor. For warehouse and roadway projects, we frequently supplement field programs with a comprehensive <a href="/laboratory/">laboratory testing</a> regimen. This includes <a href="/direct-shear/">direct shear tests</a> on intact and remolded samples to determine frictional strength parameters for slope stability and retaining wall design. For pavement design, the <a href="/laboratory-cbr/">laboratory CBR test</a> remains the standard for evaluating the strength of subgrade and aggregate base materials, ensuring asphalt and concrete sections meet the Regional Transportation Commission of Southern Nevada’s specifications for long-term performance under heavy desert traffic loads.</p>
+<img src="/img/ensayo-triaxial-3.webp" alt="Investigation in Henderson Nevada" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The investigative process concludes with the delivery of a comprehensive geotechnical report that transforms raw data into actionable design recommendations. This report provides a detailed interpretation of subsurface conditions, including design-bearing capacities, anticipated settlements, lateral earth pressures, and seismic site class in accordance with IBC Chapter 16. We deliver explicit guidance on foundation types, soil improvement, and excavation safety, empowering architects and structural engineers to optimize their designs while fully satisfying the Henderson Public Works plan-check requirements. By integrating precise field data with local geological expertise, we deliver a value proposition centered on de-risking the project, preventing costly change orders from unforeseen ground conditions, and accelerating the path to a permitted, constructible design.</p></div></section></main>
     </div>
 </div>
 

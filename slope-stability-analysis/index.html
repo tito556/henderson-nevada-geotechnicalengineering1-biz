@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
 .cat-arrow{display:inline-block;transition:transform .2s ease;font-size:.85rem}
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -57,10 +62,10 @@ body { font-family: var(--font-b); color: var(--text); background: var(--bg); li
 .cat-row:hover{background:rgba(255,255,255,.05)}
 .cta .contacto-line a { color: white; text-decoration: underline; }
 .sidebar .cat.open + .sub { display: flex; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
-    .container { padding: 1rem; }
+    
 .sidebar .sub { display: none; background: rgba(0,0,0,0.15); flex-direction: column; }
 .sidebar {
     width: 240px; background: var(--dark); color: white; flex-shrink: 0;
@@ -76,7 +81,7 @@ main p { margin-bottom: 1rem; color: #334155; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .cat-toggle:hover{background:rgba(255,255,255,.1)}
-    .header-top { flex-direction: column; text-align: center; }
+    
 tr:nth-child(even) { background: #f8fafc; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -123,7 +128,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
     text-decoration: none;
 }
 .cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
-    main { padding: 1.5rem; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -136,7 +141,9 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
-th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }</style>
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
 img{max-width:100%!important;height:auto!important}
   body{background:#FAFAFA!important;color:#18181B!important}
-  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}</style></head>
+  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Critical ground factors in Henderson Nevada</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>A 15-home subdivision in the Anthem area of Henderson Nevada experienced a retaining wall failure after a 10-year storm. The developer had skipped stability <a href="../foundations-fill/" data-interlink="1">analysis</a> for the backslope. Water infiltrated behind the wall, reduced effective stress, and triggered a rotational slide. Repair costs exceeded $300,000. We analyzed the slide using back-calculation to find residual shear strength. That data helped the geotechnical engineer design a tieback anchor system. Now every hillside lot in that community includes slope stability analysis before excavation begins.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>How does slope stability analysis work for Henderson Nevada soils?</summary><p>We collect undisturbed samples from test pits or borings, run <a href="../direct-shear/" data-interlink="1">direct shear tests</a>, and input cohesion and friction angle into limit-equilibrium software. The model calculates factor of safety for circular and non-circular slip surfaces. Seismic coefficients from ASCE 7 site class D or E are applied for earthquake loading.</p></details><details><summary>What is the typical factor of safety required for slopes in Henderson Nevada?</summary><p>IBC requires a minimum static factor of safety of 1.5. For seismic loading (pseudo-static), ASCE 7 specifies 1.1. For critical slopes near structures or utilities, we often recommend 1.5 static and 1.2 seismic. Each project may have specific requirements per the geotechnical report.</p></details><details><summary>How much does slope stability analysis cost in Henderson Nevada?</summary><p>The cost ranges between US$1.310 and US$3.830 depending on slope height, number of cross sections, and seismic complexity. This includes field sampling, lab testing, and the stability model report. Contact us for a project-specific quote.</p></details><details><summary>Do you provide stability analysis for existing slopes that have already failed?</summary><p>Yes. We perform back-<a href="../foundations-fill/" data-interlink="1">analysis</a> of failed slopes to determine residual shear strength and identify trigger mechanisms. This helps design remedial measures such as soil nails, retaining walls, or drainage improvements. We use the same limit-equilibrium methods for both new and existing slopes.</p></details><details><summary>What soil conditions in Henderson Nevada make slope stability critical?</summary><p>Colluvial and alluvial soils with low cohesion, caliche layers that form hard pans, and silty clays that lose strength when wet. Steep natural slopes on the McCullough Range front also pose risk. Seismic site class D and E amplify ground motion during earthquakes, reducing stability margin.</p></details>
             </section>
 

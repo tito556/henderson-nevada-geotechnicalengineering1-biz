@@ -23,6 +23,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
 .cat-arrow{display:inline-block;transition:transform .2s ease;font-size:.85rem}
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -54,10 +59,10 @@ body { font-family: var(--font-b); color: var(--text); background: var(--bg); li
 .cat-row:hover{background:rgba(255,255,255,.05)}
 .cta .contacto-line a { color: white; text-decoration: underline; }
 .sidebar .cat.open + .sub { display: flex; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
-    .container { padding: 1rem; }
+    
 .sidebar .sub { display: none; background: rgba(0,0,0,0.15); flex-direction: column; }
 .sidebar {
     width: 240px; background: var(--dark); color: white; flex-shrink: 0;
@@ -73,7 +78,7 @@ main p { margin-bottom: 1rem; color: #334155; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .cat-toggle:hover{background:rgba(255,255,255,.1)}
-    .header-top { flex-direction: column; text-align: center; }
+    
 tr:nth-child(even) { background: #f8fafc; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -120,7 +125,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
     text-decoration: none;
 }
 .cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
-    main { padding: 1.5rem; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -133,7 +138,9 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
-th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }</style>
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -145,7 +152,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
 img{max-width:100%!important;height:auto!important}
   body{background:#FAFAFA!important;color:#18181B!important}
-  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@id":"https://henderson-nevada.geotechnicalengineering1.biz/#website-4561","@type":"WebSite","url":"https://henderson-nevada.geotechnicalengineering1.biz"},"description":"Foundation design in Henderson, Nevada, demands careful evaluation of the arid basin soils, including cemented alluvial fans and expansive clays common to","url":"https://henderson-nevada.geotechnicalengineering1.biz/foundations/","@type":"WebPage","inLanguage":"en","name":"Foundations in Henderson Nevada – USA","@id":"https://henderson-nevada.geotechnicalengineering1.biz/foundations/"},{"itemListElement":[{"name":"Home","position":1,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/"},{"name":"Foundations","position":2,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/foundations/"}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"Bearing capacity analysis","position":1,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/bearing-capacity-analysis/"},{"name":"Foundations on fill (analysis)","position":2,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/foundations-fill/"}],"@type":"ItemList","name":"Foundations"}]}</script></head>
+  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
+}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@id":"https://henderson-nevada.geotechnicalengineering1.biz/#website-4561","@type":"WebSite","url":"https://henderson-nevada.geotechnicalengineering1.biz"},"description":"Foundation design in Henderson, Nevada, demands careful evaluation of the arid basin soils, including cemented alluvial fans and expansive clays common to","url":"https://henderson-nevada.geotechnicalengineering1.biz/foundations/","@type":"WebPage","inLanguage":"en","name":"Foundations in Henderson Nevada – USA","@id":"https://henderson-nevada.geotechnicalengineering1.biz/foundations/"},{"itemListElement":[{"name":"Home","position":1,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/"},{"name":"Foundations","position":2,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/foundations/"}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"Bearing capacity analysis","position":1,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/bearing-capacity-analysis/"},{"name":"Foundations on fill (analysis)","position":2,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/foundations-fill/"}],"@type":"ItemList","name":"Foundations"}]}</script></head>
 <body>
 
 <header>
@@ -214,7 +223,14 @@ img{max-width:100%!important;height:auto!important}
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../bearing-capacity-analysis/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Bearing capacity analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../foundations-fill/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Foundations on fill (analysis)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/cimentaciones-rellenos-3.webp" alt="Foundations in Henderson Nevada" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Foundation engineering in Henderson, Nevada, demands a thorough understanding of the local geology, which is dominated by the diverse deposits of the McCullough Range alluvial fans. Our services cover the complete lifecycle of foundation design, from initial site characterization to final construction recommendations, all performed in strict accordance with local codes such as the City of Henderson Building Code and the governing IBC standards. A deep investigation is the critical first step, identifying potential challenges like collapsible soils, cemented caliche layers, and shallow groundwater common to the Las Vegas Valley. We integrate advanced field and laboratory methods, including the <a href="/investigation/">Investigation</a> phase and precise <a href="/standard-penetration/">SPT (Standard Penetration Test)</a> procedures, to quantify soil strength and stratigraphy for safe, economical designs.</p>
+<p>Our methodology is anchored in rigorous, nationally recognized standards to deliver reliable geotechnical parameters. We execute extensive <a href="/in-situ-testing/">In-Situ Testing</a> programs, utilizing specialized techniques like the <a href="/flat-dilatometer/">Flat Dilatometer Test (DMT)</a> to accurately assess soil stiffness and lateral stress states in the sandy and silty soils prevalent in Henderson. For projects involving heavy structural loads or large mats, we perform full-scale <a href="/plate-load/">Plate Load Test (PLT)</a> evaluations to directly measure bearing capacity and subgrade reaction modulus, moving beyond theoretical estimates. These field investigations are seamlessly complemented by a comprehensive <a href="/laboratory/">Laboratory</a> testing program, where we conduct <a href="/direct-shear/">Direct Shear Test</a> procedures to define the shear strength parameters critical for slope stability and retaining wall design.</p>
+<p>Our foundation engineering expertise supports the full spectrum of development in Henderson, from the expansive residential communities in Green Valley and Inspirada to critical infrastructure and commercial logistics centers in the West Henderson corridor. We routinely solve the complex geotechnical challenges of designing foundations on collapsible soils, which require detailed saturation and <a href="/laboratory-cbr/">Laboratory CBR Test</a> data to predict settlement. Our work also includes providing pavement design recommendations for high-traffic arterials and designing deep foundation systems for mid-rise structures where shallow bearing is insufficient. Each project, regardless of scale, benefits from a data-driven approach that balances performance with cost-efficiency, ensuring long-term stability in this dynamic desert environment.</p>
+<img src="/img/cimentaciones-rellenos-3.webp" alt="Foundations in Henderson Nevada" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The deliverable is a comprehensive geotechnical report that translates complex site data into clear, actionable foundation recommendations. This process synthesizes the SPT N-values, DMT moduli, and direct shear results to provide definitive solutions for allowable bearing capacity, anticipated settlement, soil stabilization requirements, and seismic site class. Our value lies in mitigating the risk of unforeseen ground conditions, which is the primary cause of construction delays and budget overruns. We provide developers, structural engineers, and contractors in Henderson with the critical, site-specific knowledge required to build with confidence, ensuring foundations that are not just code-compliant, but robust and resilient for decades to come.</p></div></section></main>
     </div>
 </div>
 

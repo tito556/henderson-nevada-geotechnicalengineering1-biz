@@ -23,6 +23,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
 .cat-arrow{display:inline-block;transition:transform .2s ease;font-size:.85rem}
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -54,10 +59,10 @@ body { font-family: var(--font-b); color: var(--text); background: var(--bg); li
 .cat-row:hover{background:rgba(255,255,255,.05)}
 .cta .contacto-line a { color: white; text-decoration: underline; }
 .sidebar .cat.open + .sub { display: flex; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
-    .container { padding: 1rem; }
+    
 .sidebar .sub { display: none; background: rgba(0,0,0,0.15); flex-direction: column; }
 .sidebar {
     width: 240px; background: var(--dark); color: white; flex-shrink: 0;
@@ -73,7 +78,7 @@ main p { margin-bottom: 1rem; color: #334155; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .cat-toggle:hover{background:rgba(255,255,255,.1)}
-    .header-top { flex-direction: column; text-align: center; }
+    
 tr:nth-child(even) { background: #f8fafc; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -120,7 +125,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
     text-decoration: none;
 }
 .cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
-    main { padding: 1.5rem; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -133,7 +138,9 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
-th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }</style>
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -145,7 +152,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
 img{max-width:100%!important;height:auto!important}
   body{background:#FAFAFA!important;color:#18181B!important}
-  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@id":"https://henderson-nevada.geotechnicalengineering1.biz/#website-4561","@type":"WebSite","url":"https://henderson-nevada.geotechnicalengineering1.biz"},"description":"In Henderson, Nevada, ground improvement addresses the challenges of alluvial fan deposits, caliche layers, and variable near-surface soils common to the L","url":"https://henderson-nevada.geotechnicalengineering1.biz/ground-improvement/","@type":"WebPage","inLanguage":"en","name":"Ground improvement in Henderson Nevada – USA","@id":"https://henderson-nevada.geotechnicalengineering1.biz/ground-improvement/"},{"itemListElement":[{"name":"Home","position":1,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/"},{"name":"Ground improvement","position":2,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/ground-improvement/"}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"Contaminated soil remediation","position":1,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/contaminated-soil-remediation/"},{"name":"Geotextile specification","position":2,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/geotextile-specification/"},{"name":"Jet grouting design","position":3,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/jet-grouting-design/"},{"name":"Prefabricated vertical drain (PVD) design","position":4,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/prefabricated-vertical-drain/"},{"name":"Preloading with surcharge design","position":5,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/preloading-surcharge-design/"}],"@type":"ItemList","name":"Ground improvement"}]}</script></head>
+  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
+}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@id":"https://henderson-nevada.geotechnicalengineering1.biz/#website-4561","@type":"WebSite","url":"https://henderson-nevada.geotechnicalengineering1.biz"},"description":"In Henderson, Nevada, ground improvement addresses the challenges of alluvial fan deposits, caliche layers, and variable near-surface soils common to the L","url":"https://henderson-nevada.geotechnicalengineering1.biz/ground-improvement/","@type":"WebPage","inLanguage":"en","name":"Ground improvement in Henderson Nevada – USA","@id":"https://henderson-nevada.geotechnicalengineering1.biz/ground-improvement/"},{"itemListElement":[{"name":"Home","position":1,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/"},{"name":"Ground improvement","position":2,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/ground-improvement/"}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"Contaminated soil remediation","position":1,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/contaminated-soil-remediation/"},{"name":"Geotextile specification","position":2,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/geotextile-specification/"},{"name":"Jet grouting design","position":3,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/jet-grouting-design/"},{"name":"Prefabricated vertical drain (PVD) design","position":4,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/prefabricated-vertical-drain/"},{"name":"Preloading with surcharge design","position":5,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/preloading-surcharge-design/"}],"@type":"ItemList","name":"Ground improvement"}]}</script></head>
 <body>
 
 <header>
@@ -214,7 +223,14 @@ img{max-width:100%!important;height:auto!important}
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../contaminated-soil-remediation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Contaminated soil remediation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../geotextile-specification/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotextile specification</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../jet-grouting-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Jet grouting design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../prefabricated-vertical-drain/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Prefabricated vertical drain (PVD) design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../preloading-surcharge-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Preloading with surcharge design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/vibrocompactacion-1.webp" alt="Ground improvement in Henderson Nevada" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Ground improvement in Henderson, Nevada, addresses the engineering challenges posed by the region's complex geology, which is dominated by alluvial fan deposits, cemented caliche layers, and the occasional presence of expansive clays and collapsible soils near the McCullough Range foothills. A thorough geotechnical <a href="/investigation/">investigation</a> is the critical first step to characterize these variable subsurface conditions and assess risks such as differential settlement and poor bearing capacity. Local design must conform to the current City of Henderson Building Code, which adopts the IBC, and adhere to standards set by the Southern Nevada Building Officials (SNBO), while all testing procedures strictly follow applicable ASTM International and AASHTO specifications.</p>
+<p>Our ground improvement methodology relies on a suite of in-situ and laboratory testing standards to quantify soil properties and design appropriate solutions. We perform <a href="/standard-penetration/">SPT (Standard Penetration Test)</a> per ASTM D1586 to evaluate relative density and strength in granular soils, complemented by advanced <a href="/in-situ-testing/">in-situ testing</a> such as the <a href="/flat-dilatometer/">Flat Dilatometer Test (DMT)</a> (ASTM D6635) for precise modulus and stress history profiles. Load-bearing performance is directly verified through full-scale <a href="/plate-load/">plate load test (PLT)</a> programs conducted in accordance with ASTM D1194, providing the modulus of subgrade reaction to refine foundation and pavement designs. These field measurements are integrated with laboratory analyses from our <a href="/laboratory/">laboratory</a>, including strength and consolidation testing, to build a robust geotechnical model for improvement design.</p>
+<p>Typical projects in Henderson’s developing areas, such as Cadence, Inspirada, and West Henderson, frequently require ground improvement to mitigate risks from collapsible soils and to support structures on sites with deep, undocumented fill. For warehouse and logistics centers in the Henderson Commerce Center, we design rigid inclusion and deep dynamic compaction programs validated by SPT and PLT. Residential and commercial developments on cemented silty sands rely on our <a href="/direct-shear/">direct shear test</a> data to verify friction angles for aggregate pier design, while pavement subgrade stabilization for arterial roadways is optimized using the <a href="/laboratory-cbr/">laboratory CBR test</a> to ensure long-term performance under traffic loads and the region’s specific moisture conditions.</p>
+<img src="/img/columnas-grava-4.webp" alt="Ground improvement in Henderson Nevada" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The process begins with a targeted investigation to define the soil profile, followed by analysis and selection of the most effective improvement method—from dynamic compaction to chemical grouting. Our deliverables include a design report with acceptance criteria, construction specifications, and a testing plan for quality control, which is executed by our team during installation to verify compliance. This integrated, data-driven approach ensures that ground improvement in the Las Vegas Valley delivers predictable soil behavior, reduces structural risk, and provides a high-value, constructable solution that meets the strict requirements of local jurisdictions and project schedules.</p></div></section></main>
     </div>
 </div>
 

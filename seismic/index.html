@@ -23,6 +23,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
 .cat-arrow{display:inline-block;transition:transform .2s ease;font-size:.85rem}
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -54,10 +59,10 @@ body { font-family: var(--font-b); color: var(--text); background: var(--bg); li
 .cat-row:hover{background:rgba(255,255,255,.05)}
 .cta .contacto-line a { color: white; text-decoration: underline; }
 .sidebar .cat.open + .sub { display: flex; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
-    .container { padding: 1rem; }
+    
 .sidebar .sub { display: none; background: rgba(0,0,0,0.15); flex-direction: column; }
 .sidebar {
     width: 240px; background: var(--dark); color: white; flex-shrink: 0;
@@ -73,7 +78,7 @@ main p { margin-bottom: 1rem; color: #334155; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .cat-toggle:hover{background:rgba(255,255,255,.1)}
-    .header-top { flex-direction: column; text-align: center; }
+    
 tr:nth-child(even) { background: #f8fafc; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -120,7 +125,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
     text-decoration: none;
 }
 .cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
-    main { padding: 1.5rem; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -133,7 +138,9 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
-th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }</style>
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -145,7 +152,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
 img{max-width:100%!important;height:auto!important}
   body{background:#FAFAFA!important;color:#18181B!important}
-  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@id":"https://henderson-nevada.geotechnicalengineering1.biz/#website-4561","@type":"WebSite","url":"https://henderson-nevada.geotechnicalengineering1.biz"},"description":"In Henderson, Nevada, seismic site assessment addresses the unique risks posed by the active fault systems within the Basin and Range Province, including t","url":"https://henderson-nevada.geotechnicalengineering1.biz/seismic/","@type":"WebPage","inLanguage":"en","name":"Seismic in Henderson Nevada – USA","@id":"https://henderson-nevada.geotechnicalengineering1.biz/seismic/"},{"itemListElement":[{"name":"Home","position":1,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/"},{"name":"Seismic","position":2,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/seismic/"}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"Seismic amplification analysis","position":1,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/seismic-amplification-analysis/"},{"name":"Seismic microzonation","position":2,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/seismic-microzonation/"}],"@type":"ItemList","name":"Seismic"}]}</script></head>
+  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
+}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@id":"https://henderson-nevada.geotechnicalengineering1.biz/#website-4561","@type":"WebSite","url":"https://henderson-nevada.geotechnicalengineering1.biz"},"description":"In Henderson, Nevada, seismic site assessment addresses the unique risks posed by the active fault systems within the Basin and Range Province, including t","url":"https://henderson-nevada.geotechnicalengineering1.biz/seismic/","@type":"WebPage","inLanguage":"en","name":"Seismic in Henderson Nevada – USA","@id":"https://henderson-nevada.geotechnicalengineering1.biz/seismic/"},{"itemListElement":[{"name":"Home","position":1,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/"},{"name":"Seismic","position":2,"@type":"ListItem","item":"https://henderson-nevada.geotechnicalengineering1.biz/seismic/"}],"@type":"BreadcrumbList"},{"itemListElement":[{"name":"Seismic amplification analysis","position":1,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/seismic-amplification-analysis/"},{"name":"Seismic microzonation","position":2,"@type":"ListItem","url":"https://henderson-nevada.geotechnicalengineering1.biz/seismic-microzonation/"}],"@type":"ItemList","name":"Seismic"}]}</script></head>
 <body>
 
 <header>
@@ -214,7 +223,14 @@ img{max-width:100%!important;height:auto!important}
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../seismic-amplification-analysis/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Seismic amplification analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../seismic-microzonation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Seismic microzonation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/microzonificacion-sismica-1.webp" alt="Seismic in Henderson Nevada" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Seismic site assessment in Henderson, Nevada, encompasses the evaluation of subsurface conditions to determine the site-specific ground motion hazards and soil behavior during earthquake events. The city lies within the seismically active Basin and Range Province, where the predominant hazard stems from the Frenchman Mountain and Black Hills fault systems. Local geology is characterized by Quaternary alluvial deposits, cemented caliche layers, and the underlying Muddy Creek Formation, which can amplify seismic waves. Regulatory compliance is driven by the 2018 International Building Code as adopted by Clark County, which references ASCE 7-22 for seismic design parameters. A thorough <a href="/investigation/">investigation</a> of these soils is critical, often beginning with targeted <a href="/standard-penetration/">SPT (Standard Penetration Test)</a> borings to evaluate liquefaction potential.</p>
+<p>Our methodology adheres to ASTM International standards and the Nevada Department of Transportation (NDOT) protocols to generate design-grade seismic data. Liquefaction analysis is performed using SPT N-values corrected to an overburden pressure of 1 atm (N₁)₆₀, with fines content determined from split-spoon samples as per ASTM D1586. For fine-grained soils, cyclic softening is evaluated through <a href="/in-situ-testing/">in-situ testing</a> methods that measure shear wave velocity (Vs). The <a href="/flat-dilatometer/">flat dilatometer test (DMT)</a> provides high-resolution stratigraphic profiling and direct estimates of constrained modulus for settlement calculations. When shallow foundations are proposed on variable fill, a <a href="/plate-load/">plate load test (PLT)</a> may be performed in accordance with ASTM D1194 to verify bearing capacity and modulus of subgrade reaction under seismic load combinations.</p>
+<p>Typical projects in Henderson demand robust seismic solutions for residential subdivisions on the expanding slopes of the McCullough Range, as well as commercial developments in the Green Valley and Cadence master-planned communities. We frequently address site-specific response analysis for essential facilities, where the deep alluvial basins can generate significant basin-edge effects. For projects involving expansive clays or cemented soils, our <a href="/laboratory/">laboratory</a> suite provides critical strength parameters. The <a href="/direct-shear/">direct shear test</a> is conducted under consolidated-drained conditions to define the Mohr-Coulomb failure envelope for slope stability and retaining wall design during seismic loading, ensuring that total stress and effective stress parameters are accurately captured for the project-specific groundwater conditions.</p>
+<img src="/img/amplificacion-sismica-2.webp" alt="Seismic in Henderson Nevada" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The seismic evaluation process integrates field data, laboratory results, and advanced modeling to produce a clear, actionable report. Deliverables include site classification per ASCE 7 Chapter 20, liquefaction potential index maps, seismic settlement estimates, and specific recommendations for ground improvement or deep foundations if needed. The core value lies in transitioning from a generic code-based approach to a site-specific performance-based design, directly reducing foundation costs by eliminating unnecessary conservatism while ensuring structural resilience. By coupling high-quality <a href="/laboratory-cbr/">laboratory CBR tests</a> with rigorous seismic analysis, we provide Henderson developers and structural engineers with the precise geotechnical parameters required for safe and economical construction in this dynamic seismic setting.</p></div></section></main>
     </div>
 </div>
 

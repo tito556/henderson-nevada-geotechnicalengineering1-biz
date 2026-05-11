@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
 .cat-arrow{display:inline-block;transition:transform .2s ease;font-size:.85rem}
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -57,10 +62,10 @@ body { font-family: var(--font-b); color: var(--text); background: var(--bg); li
 .cat-row:hover{background:rgba(255,255,255,.05)}
 .cta .contacto-line a { color: white; text-decoration: underline; }
 .sidebar .cat.open + .sub { display: flex; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
-    .container { padding: 1rem; }
+    
 .sidebar .sub { display: none; background: rgba(0,0,0,0.15); flex-direction: column; }
 .sidebar {
     width: 240px; background: var(--dark); color: white; flex-shrink: 0;
@@ -76,7 +81,7 @@ main p { margin-bottom: 1rem; color: #334155; }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .cat-toggle:hover{background:rgba(255,255,255,.1)}
-    .header-top { flex-direction: column; text-align: center; }
+    
 tr:nth-child(even) { background: #f8fafc; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -123,7 +128,7 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
     text-decoration: none;
 }
 .cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
-    main { padding: 1.5rem; }
+    
 
 .cta .whatsapp-btn {
     display: inline-block; background: #25D366; color: white;
@@ -136,7 +141,9 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
-th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }</style>
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ th { background: var(--dark); color: white; font-weight: 600; font-family: var(-
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
 img{max-width:100%!important;height:auto!important}
   body{background:#FAFAFA!important;color:#18181B!important}
-  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}</style></head>
+  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>Critical ground factors in Henderson Nevada</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>We use a full set of motorized sieves and a hydrometer bath in our Henderson Nevada lab, processing up to 12 samples per day during peak construction season. The risk here is that a single misclassified sample — especially one that appears sandy but has hidden plasticity — can lead to a pavement design that fails within two years. We mitigate this by running duplicate samples on every fifth borehole and maintaining ISO 17025 accreditation for all particle-size and Atterberg tests. If the soil classification (USCS/AASHTO) shows a PI above 35, we immediately flag it for the structural engineer so they can incorporate moisture control or lime stabilization into the specifications.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the difference between USCS and AASHTO soil classification?</summary><p>USCS (ASTM D2487) groups soils by particle size and plasticity into 15 categories like CH, SM, or GW, focusing on engineering behavior for foundations and earthworks. AASHTO (M 145) assigns a group index from 0 to 20 and classifies soils into 8 groups (A-1 through A-7), emphasizing pavement subgrade performance. For Henderson Nevada projects, we often run both because the USCS classification tells us about shrink-swell risk, while the AASHTO group index directly feeds into the structural number of the pavement section.</p></details><details><summary>How much does a soil classification test cost in Henderson Nevada?</summary><p>A standard soil classification (USCS/AASHTO) including sieve <a href="../foundations-fill/" data-interlink="1">analysis</a>, hydrometer, and Atterberg limits typically ranges between US$70 and US$90 per sample. The cost may vary slightly depending on the number of samples and whether field logging is included. We provide a fixed quote per sample with no hidden fees for the full ASTM D2487 classification.</p></details><details><summary>Why is soil classification important for Henderson Nevada construction?</summary><p>Henderson Nevada soils often contain highly plastic clays (CH) that can swell up to 15% when wetted, causing slab heave and foundation cracks. Accurate soil classification (USCS/AASHTO) identifies these materials before construction, allowing engineers to specify moisture barriers, lime treatment, or deep foundations. Without this step, you risk structural damage that costs far more to repair than the initial classification testing.</p></details><details><summary>What sample type is needed for a complete classification?</summary><p>We require a minimum of 3 pounds (1.4 kg) of disturbed bulk sample for sieve and Atterberg tests, plus an undisturbed tube sample (3-inch diameter) if you need field moisture and density correlation. For pavement design, a representative sample from each distinct soil layer in the subgrade is ideal. We can guide you on sample collection during your Henderson Nevada site investigation.</p></details>
             </section>
 
