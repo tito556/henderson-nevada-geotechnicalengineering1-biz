@@ -175,6 +175,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#264653) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -245,7 +281,7 @@ header.hero, .hero { position: relative !important; }
 
             <section>
                 <h2>FAQ</h2>
-                <details><summary>What are the typical soil conditions for a residential project in Henderson?</summary><p>Most residential lots in Henderson have shallow alluvial soils—silty sands and gravelly sands—that are often loose near the surface. Collapsible soil is a common concern, especially in areas near the McCullough Range. We typically recommend over-excavation and recompaction or deep foundations to mitigate settlement risks. Groundwater is rarely an issue for standard homes, but localized perched water can occur near washes. Our standard investigation includes SPT borings and laboratory testing to characterize these conditions.</p></details><details><summary>Does Henderson have any unique seismic hazards I should know about?</summary><p>Yes, while the Las Vegas Valley is not in a high seismic zone, moderate ground shaking from nearby faults like the Black Hills fault and the Frenchman Mountain fault system is possible. The primary hazard for Henderson is liquefaction in saturated sandy layers, though groundwater is generally deep. We also evaluate site amplification due to soft alluvial deposits. Our seismic analyses follow ASCE 7-22 and include site-specific response spectra when required by the building code.</p></details><details><summary>What building code and geotechnical standards apply in Henderson?</summary><p>Henderson adopts the International Building Code (IBC) with Clark County amendments. Geotechnical investigations follow ASTM standards for drilling, sampling, and laboratory testing. Seismic design uses ASCE 7-22, and foundation designs must comply with the Nevada State Building Code. Our reports are prepared by licensed professional engineers in Nevada and are designed to meet all local permitting requirements.</p></details><details><summary>How long does a typical geotechnical investigation take for a commercial project in Henderson?</summary><p>Timelines vary with project size and complexity. For a typical commercial building, we usually complete fieldwork (borings and test pits) in one to two weeks, followed by laboratory testing that takes two to three weeks. Report preparation adds another week. Overall, expect four to six weeks from start to delivery of the final geotechnical report. Rushed schedules can sometimes be accommodated with additional mobilization.</p></details>
+                <details><summary>What are the typical soil conditions for a residential project in Henderson?</summary><p>Most residential lots in Henderson have shallow alluvial soils—silty sands and gravelly sands—that are often loose near the surface. Collapsible soil is a common concern, especially in areas near the McCullough Range. We typically recommend over-excavation and recompaction or deep <a href="/foundations/">foundations</a> to mitigate settlement risks. Groundwater is rarely an issue for standard homes, but localized perched water can occur near washes. Our standard investigation includes SPT borings and laboratory testing to characterize these conditions.</p></details><details><summary>Does Henderson have any unique seismic hazards I should know about?</summary><p>Yes, while the Las Vegas Valley is not in a high seismic zone, moderate ground shaking from nearby faults like the Black Hills fault and the Frenchman Mountain fault system is possible. The primary hazard for Henderson is liquefaction in saturated sandy layers, though groundwater is generally deep. We also evaluate site amplification due to soft alluvial deposits. Our seismic analyses follow ASCE 7-22 and include site-specific response spectra when required by the building code.</p></details><details><summary>What building code and geotechnical standards apply in Henderson?</summary><p>Henderson adopts the International Building Code (IBC) with Clark County amendments. Geotechnical investigations follow ASTM standards for drilling, sampling, and laboratory testing. Seismic design uses ASCE 7-22, and foundation designs must comply with the Nevada State Building Code. Our reports are prepared by licensed professional engineers in Nevada and are designed to meet all local permitting requirements.</p></details><details><summary>How long does a typical geotechnical investigation take for a commercial project in Henderson?</summary><p>Timelines vary with project size and complexity. For a typical commercial building, we usually complete fieldwork (borings and test pits) in one to two weeks, followed by laboratory testing that takes two to three weeks. Report preparation adds another week. Overall, expect four to six weeks from start to delivery of the final geotechnical report. Rushed schedules can sometimes be accommodated with additional mobilization.</p></details>
             </section>
 
             <section>

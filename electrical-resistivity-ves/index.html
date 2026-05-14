@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#264653) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -243,7 +279,9 @@ header.hero, .hero { position: relative !important; }
             </section>
 
             <section>
-                <section class="block video-block" style="padding:2rem 1.5rem"><div style="max-width:720px;margin:0 auto"><h2 style="margin-bottom:1rem;font-weight:700;font-size:1.4rem">Visual overview</h2><div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px"><iframe src="https://www.youtube.com/embed/ekNRkYFQp_U" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" loading="lazy" allowfullscreen></iframe></div></div></section>
+                <section class="block video-block" style="padding:2rem 1.5rem"><div style="max-width:720px;margin:0 auto"><h2 style="margin-bottom:1rem;font-weight:700;font-size:1.4rem">Visual overview</h2><div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px"><iframe src="https://www.youtube.com/embed/ekNRkYFQp_U" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" loading="lazy" allowfullscreen></iframe></div></div>
+      <p style="margin-top:1rem">This service complements our <a href="/laboratory/">laboratory testing</a> work for a complete project analysis.</p>
+    </section>
 <h2>FAQ</h2>
                 <details><summary>How does electrical resistivity compare to drilling in Henderson Nevada?</summary><p>Resistivity surveys are non-invasive and cover a larger area than a single borehole. In the dry alluvium of Henderson Nevada, they can detect caliche layers and paleochannels that a borehole might miss. We still recommend a few confirmation boreholes for critical structures, but resistivity reduces the number needed.</p></details><details><summary>What is the typical cost range for a VES survey in Henderson?</summary><p>A single vertical electrical sounding (VES) in Henderson Nevada typically ranges between US$680 and US$1,050, depending on the depth required and access conditions. A full 2D profile with multiple lines costs more but gives broader coverage.</p></details><details><summary>How deep can a VES survey reach in Nevada desert soils?</summary><p>With a standard 50-meter electrode spread we can reach about 30 meters in the dry alluvium. If we extend the spread to 100 meters, depths up to 60 meters are achievable, though resolution decreases at lower depths.</p></details><details><summary>Do I need an electrical resistivity survey for a residential slab?</summary><p>For a single-family home on a lot that has not been previously built on, it may not be required by code. However, if the lot is near an old wash channel or in an area with known caliche, a resistivity survey can prevent settlement issues. We often recommend it for hillside lots or when the builder has limited geotechnical data.</p></details>
             </section>

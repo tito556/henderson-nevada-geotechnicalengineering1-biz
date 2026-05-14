@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#264653) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -244,7 +280,7 @@ header.hero, .hero { position: relative !important; }
 
             <section>
                 <h2>FAQ</h2>
-                <details><summary>What does the triaxial test measure that a simple compression test cannot?</summary><p>The triaxial test applies confining pressure to simulate actual burial depth, so you get the cohesion and friction angle under realistic stress conditions. Unconfined compression only gives you the unconfined compressive strength (qu) and ignores the confining effect that exists in the ground.</p></details><details><summary>How much does a triaxial test cost in Henderson Nevada?</summary><p>A standard CU triaxial test with three confining pressures ranges between US$2.050 and US$2.360, including sample preparation and a full Mohr-Coulomb report. CD tests run slightly higher due to longer consolidation and shearing stages. Volume discounts apply when testing multiple borehole samples from the same project.</p></details><details><summary>When should I request CD instead of CU for a Henderson project?</summary><p>Request CD when your design involves slow, drained loading — for example, a mechanically stabilized earth (MSE) wall or a long-term <a href="../slope-stability-analysis/" data-interlink="1">slope stability <a href="../foundations-fill/" data-interlink="1">analysis</a></a>. CU is appropriate for rapid construction, seismic loading, or short-term undrained conditions after excavation.</p></details>
+                <details><summary>What does the triaxial test measure that a simple compression test cannot?</summary><p>The triaxial test applies confining pressure to simulate actual burial depth, so you get the cohesion and friction angle under realistic stress conditions. <a href="/unconfined-compression/">Unconfined compression</a> only gives you the unconfined compressive strength (qu) and ignores the confining effect that exists in the ground.</p></details><details><summary>How much does a triaxial test cost in Henderson Nevada?</summary><p>A standard CU triaxial test with three confining pressures ranges between US$2.050 and US$2.360, including sample preparation and a full Mohr-Coulomb report. CD tests run slightly higher due to longer consolidation and shearing stages. Volume discounts apply when testing multiple borehole samples from the same project.</p></details><details><summary>When should I request CD instead of CU for a Henderson project?</summary><p>Request CD when your design involves slow, drained loading — for example, a mechanically stabilized earth (MSE) wall or a long-term <a href="../slope-stability-analysis/" data-interlink="1">slope stability <a href="../foundations-fill/" data-interlink="1">analysis</a></a>. CU is appropriate for rapid construction, seismic loading, or short-term undrained conditions after excavation.</p></details>
             </section>
 
             <section>

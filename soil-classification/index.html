@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#264653) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -246,7 +282,7 @@ header.hero, .hero { position: relative !important; }
                 <h2>FAQ</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 
-                <details><summary>What is the difference between USCS and AASHTO soil classification?</summary><p>USCS (ASTM D2487) groups soils by particle size and plasticity into 15 categories like CH, SM, or GW, focusing on engineering behavior for foundations and earthworks. AASHTO (M 145) assigns a group index from 0 to 20 and classifies soils into 8 groups (A-1 through A-7), emphasizing pavement subgrade performance. For Henderson Nevada projects, we often run both because the USCS classification tells us about shrink-swell risk, while the AASHTO group index directly feeds into the structural number of the pavement section.</p></details><details><summary>How much does a soil classification test cost in Henderson Nevada?</summary><p>A standard soil classification (USCS/AASHTO) including sieve <a href="../foundations-fill/" data-interlink="1">analysis</a>, hydrometer, and Atterberg limits typically ranges between US$70 and US$90 per sample. The cost may vary slightly depending on the number of samples and whether field logging is included. We provide a fixed quote per sample with no hidden fees for the full ASTM D2487 classification.</p></details><details><summary>Why is soil classification important for Henderson Nevada construction?</summary><p>Henderson Nevada soils often contain highly plastic clays (CH) that can swell up to 15% when wetted, causing slab heave and foundation cracks. Accurate soil classification (USCS/AASHTO) identifies these materials before construction, allowing engineers to specify moisture barriers, lime treatment, or deep foundations. Without this step, you risk structural damage that costs far more to repair than the initial classification testing.</p></details><details><summary>What sample type is needed for a complete classification?</summary><p>We require a minimum of 3 pounds (1.4 kg) of disturbed bulk sample for sieve and Atterberg tests, plus an undisturbed tube sample (3-inch diameter) if you need field moisture and density correlation. For pavement design, a representative sample from each distinct soil layer in the subgrade is ideal. We can guide you on sample collection during your Henderson Nevada site investigation.</p></details>
+                <details><summary>What is the difference between USCS and AASHTO soil classification?</summary><p>USCS (ASTM D2487) groups soils by particle size and plasticity into 15 categories like CH, SM, or GW, focusing on engineering behavior for <a href="/foundations/">foundations</a> and earthworks. AASHTO (M 145) assigns a group index from 0 to 20 and classifies soils into 8 groups (A-1 through A-7), emphasizing pavement subgrade performance. For Henderson Nevada projects, we often run both because the USCS classification tells us about shrink-swell risk, while the AASHTO group index directly feeds into the structural number of the pavement section.</p></details><details><summary>How much does a soil classification test cost in Henderson Nevada?</summary><p>A standard soil classification (USCS/AASHTO) including sieve <a href="../foundations-fill/" data-interlink="1">analysis</a>, hydrometer, and Atterberg limits typically ranges between US$70 and US$90 per sample. The cost may vary slightly depending on the number of samples and whether field logging is included. We provide a fixed quote per sample with no hidden fees for the full ASTM D2487 classification.</p></details><details><summary>Why is soil classification important for Henderson Nevada construction?</summary><p>Henderson Nevada soils often contain highly plastic clays (CH) that can swell up to 15% when wetted, causing slab heave and foundation cracks. Accurate soil classification (USCS/AASHTO) identifies these materials before construction, allowing engineers to specify moisture barriers, lime treatment, or deep foundations. Without this step, you risk structural damage that costs far more to repair than the initial classification testing.</p></details><details><summary>What sample type is needed for a complete classification?</summary><p>We require a minimum of 3 pounds (1.4 kg) of disturbed bulk sample for sieve and Atterberg tests, plus an undisturbed tube sample (3-inch diameter) if you need field moisture and density correlation. For pavement design, a representative sample from each distinct soil layer in the subgrade is ideal. We can guide you on sample collection during your Henderson Nevada site investigation.</p></details>
             </section>
 
             <section>

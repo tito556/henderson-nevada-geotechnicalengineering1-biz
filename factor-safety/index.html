@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#264653) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -246,7 +282,7 @@ Each parameter is cross-checked against ASTM D2487 soil classification and local
 
             <section>
                 <h2>FAQ</h2>
-                <details><summary>What is the typical factor of safety required for slopes in Henderson Nevada?</summary><p>For static conditions, IBC 2021 requires a minimum FS of 1.5. Under seismic loads, the allowable FS drops to 1.1-1.2, but must be verified with site-specific soil data.</p></details><details><summary>How much does a factor of safety calculation cost in Henderson Nevada?</summary><p>The cost typically ranges from US$580 to US$1,680 depending on project complexity, number of soil layers, and whether seismic <a href="../foundations-fill/" data-interlink="1">analysis</a> is included.</p></details><details><summary>What soil parameters are needed for an accurate FS calculation?</summary><p>The reference range for this service in Henderson Nevada is US$580 - US$1.680. The final price depends on the project scope and volume.</p></details><details><summary>Can I use the same FS value for all soil types in Henderson Nevada?</summary><p>No. Collapsible soils, expansive clays, and loose sands require different FS adjustments. We tailor each calculation to the actual soil profile from borings.</p></details>
+                <details><summary>What is the typical factor of safety required for slopes in Henderson Nevada?</summary><p>For static conditions, IBC 2021 requires a minimum FS of 1.5. Under <a href="/seismic/">seismic</a> loads, the allowable FS drops to 1.1-1.2, but must be verified with site-specific soil data.</p></details><details><summary>How much does a factor of safety calculation cost in Henderson Nevada?</summary><p>The cost typically ranges from US$580 to US$1,680 depending on project complexity, number of soil layers, and whether seismic <a href="../foundations-fill/" data-interlink="1">analysis</a> is included.</p></details><details><summary>What soil parameters are needed for an accurate FS calculation?</summary><p>The reference range for this service in Henderson Nevada is US$580 - US$1.680. The final price depends on the project scope and volume.</p></details><details><summary>Can I use the same FS value for all soil types in Henderson Nevada?</summary><p>No. Collapsible soils, expansive clays, and loose sands require different FS adjustments. We tailor each calculation to the actual soil profile from borings.</p></details>
             </section>
 
             <section>

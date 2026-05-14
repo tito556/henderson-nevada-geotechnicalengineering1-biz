@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#264653) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -244,7 +280,7 @@ header.hero, .hero { position: relative !important; }
 
             <section>
                 <h2>FAQ</h2>
-                <details><summary>What is the typical allowable bearing capacity for residential footings in Henderson Nevada?</summary><p>For single-family homes on spread footings, we commonly recommend 1.5 to 2.5 kg/cm² (150 to 250 kPa) for sandy soils, and 1.0 to 1.5 kg/cm² for clayey silts. These values assume a minimum footing width of 0.6 m and embedment of 0.3 m below frost line or 0.6 m below grade.</p></details><details><summary>How does the caliche layer affect bearing capacity in Henderson Nevada?</summary><p>Caliche is a cemented calcium carbonate layer that can show high strength in hand samples but may be underlain by loose soil. If you excavate through it, the bearing stratum changes. We always verify with SPT below the caliche crust and recommend the bearing capacity be based on the weaker underlying material unless the footing bears directly on intact caliche.</p></details><details><summary>What is the difference between allowable bearing capacity and ultimate bearing capacity?</summary><p>Ultimate bearing capacity is the maximum pressure the soil can support before shear failure. Allowable bearing capacity is that value divided by a factor of safety — typically 3.0. Design uses allowable values, but we also check settlement at that pressure to ensure serviceability limits are not exceeded.</p></details><details><summary>How much does a bearing capacity analysis cost in Henderson Nevada?</summary><p>A typical bearing capacity <a href="../foundations-fill/" data-interlink="1">analysis</a> including two SPT borings to 9 m depth, lab testing, and a report ranges between US$660 and US$1,460 depending on site access, number of borings, and required laboratory work. Larger commercial projects with deeper borings or additional laboratory tests will be higher.</p></details>
+                <details><summary>What is the typical allowable bearing capacity for residential footings in Henderson Nevada?</summary><p>For single-family homes on spread footings, we commonly recommend 1.5 to 2.5 kg/cm² (150 to 250 kPa) for sandy soils, and 1.0 to 1.5 kg/cm² for clayey silts. These values assume a minimum footing width of 0.6 m and embedment of 0.3 m below frost line or 0.6 m below grade.</p></details><details><summary>How does the caliche layer affect bearing capacity in Henderson Nevada?</summary><p>Caliche is a cemented calcium carbonate layer that can show high strength in hand samples but may be underlain by loose soil. If you excavate through it, the bearing stratum changes. We always verify with SPT below the caliche crust and recommend the bearing capacity be based on the weaker underlying material unless the footing bears directly on intact caliche.</p></details><details><summary>What is the difference between allowable bearing capacity and ultimate bearing capacity?</summary><p>Ultimate bearing capacity is the maximum pressure the soil can support before shear failure. Allowable bearing capacity is that value divided by a <a href="/factor-safety/">factor of safety</a> — typically 3.0. Design uses allowable values, but we also check settlement at that pressure to ensure serviceability limits are not exceeded.</p></details><details><summary>How much does a bearing capacity analysis cost in Henderson Nevada?</summary><p>A typical bearing capacity <a href="../foundations-fill/" data-interlink="1">analysis</a> including two SPT borings to 9 m depth, lab testing, and a report ranges between US$660 and US$1,460 depending on site access, number of borings, and required laboratory work. Larger commercial projects with deeper borings or additional laboratory tests will be higher.</p></details>
             </section>
 
             <section>
